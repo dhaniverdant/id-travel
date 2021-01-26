@@ -2,7 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/yogyakarta">Yogyakarta</router-link> |
+      <router-link to="/malang">Malang</router-link> |
+      <router-link to="/bali">Bali</router-link> |
+      <router-link to="/sumbawa">Sumbawa</router-link>
     </div>
     <router-view />
   </div>
