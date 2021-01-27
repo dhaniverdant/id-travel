@@ -13,7 +13,7 @@
     </section>
     <section class="experiences">
       <h2>Top experiences in {{ destination.name }}</h2>
-      <div class="cards">
+      <div class="cards" id="experience">
         <div
           v-for="experience in destination.experiences"
           :key="experience.slug"
@@ -22,7 +22,8 @@
           <router-link
             :to="{
               name: 'experienceDetails',
-              params: { experienceSlug: experience.slug }
+              params: { experienceSlug: experience.slug },
+              hash: '#experience'
             }"
           >
             <img
@@ -73,26 +74,36 @@ img {
   width: 100%;
   max-height: 400px;
 }
+
+.experiences {
+  padding: 40px 0;
+}
+
 .destination-details {
   display: flex;
   justify-content: space-between;
 }
+
 p {
   margin: 0 40px;
   font-size: 20px;
   text-align: left;
 }
+
 .cards {
   display: flex;
   justify-content: space-between;
 }
+
 .cards img {
   max-height: 200px;
 }
+
 .card {
   padding: 0 20px;
   position: relative;
 }
+
 .card__text {
   position: absolute;
   top: 50%;
