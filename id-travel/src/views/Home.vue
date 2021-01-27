@@ -37,6 +37,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 .home {
   max-width: 1400px;
@@ -45,10 +46,21 @@ export default {
 
 img {
   max-width: 200px;
+  max-height: 120px;
 }
 
 .destinations {
   display: flex;
   justify-content: space-between;
+}
+
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited {
+  text-decoration: underline;
 }
 </style>

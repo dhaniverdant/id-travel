@@ -10,6 +10,7 @@
     </div>
   </section>
 </template>
+
 <script>
 import store from "@/store.js";
 export default {
@@ -20,13 +21,18 @@ export default {
   },
   computed: {
     destination() {
+      // return store.destinations.find(
+      //   destination => destination.id === this.destinationId
+      // );
       return store.destinations.find(
-        destination => destination.id === this.destinationId
+        destination =>
+          parseInt(destination.id, 10) === parseInt(this.destinationId, 10)
       );
     }
   }
 };
 </script>
+
 <style scoped>
 img {
   max-width: 600px;

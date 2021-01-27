@@ -2,8 +2,8 @@
   <div id="app">
     <div id="nav">
       <TheNavigation />
+      <router-view :key="$route.path" />
     </div>
-    <router-view />
   </div>
 </template>
 <script>
