@@ -40,6 +40,14 @@ const routes = [
     name: "Sumbawa",
     component: () =>
       import(/* webpackChunkName: "sumbawa" */ "../views/Sumbawa")
+  },
+  {
+    path: "/details",
+    name: "DestinationDetails",
+    component: () =>
+      import(
+        /* webpackChunkName: "DestinationDetails" */ "../views/DestinationDetails"
+      )
   }
 ];
 
